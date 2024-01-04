@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lista de Tarefas</string>
+    <string name="tarefa_id">Insira o nome da tarefa</string>
+    <string name="date">dd/mm/aaaa</string>
+</resources>

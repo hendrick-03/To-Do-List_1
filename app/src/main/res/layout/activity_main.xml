@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:text="lista de Tarefas" />
+
+    <EditText
+        android:id="@+id/id_tarefa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/tarefa_id"
+        android:layout_margin="30dp"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- RadioButtons na horizontal -->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/alta_rb"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="45dp"
+                android:text="Alta" />
+
+            <RadioButton
+                android:id="@+id/media_rb"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:text="Media" />
+
+            <RadioButton
+                android:id="@+id/baixa_rb"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Baixa" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/categoria_id"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/concluida_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Andamento" />
+
+    <CheckBox
+        android:id="@+id/andamento_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Concluida" />
+
+    <EditText
+        android:id="@+id/date_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:ems="10"
+        android:hint="@string/date"
+        android:inputType="date" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/gravar_btn"
+            android:layout_width="150dp"
+            android:layout_marginRight="100dp"
+            android:layout_height="wrap_content"
+            android:text="Gravar" />
+
+        <Button
+            android:id="@+id/listar_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Listar" />
+    </LinearLayout>
+
+</LinearLayout>
